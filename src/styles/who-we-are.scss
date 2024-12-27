@@ -1,11 +1,16 @@
 .who-we-are {
-  height: 100vh;
+  padding: 120px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
 
   @include page-paddings;
+
+  @include on-tablet {
+    padding-top: 148px;
+    padding-bottom: 148px;
+  }
 
   @include on-small-desktop {
     height: 504px;

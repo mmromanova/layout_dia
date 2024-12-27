@@ -6,6 +6,7 @@
   right: 0;
   pointer-events: none;
   opacity: 0;
+
   background-color: $black-background-color;
 
   @include page-paddings;
@@ -36,8 +37,6 @@
       background-size: cover;
     }
   }
-
-
 
   &__nav {
     margin-top: 80px;

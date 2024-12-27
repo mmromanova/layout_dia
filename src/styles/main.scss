@@ -32,4 +32,6 @@ a {
   @include hover(cursor, default);
 }
 
-
+body:has(.header-menu:target) {
+  overflow: hidden;
+}
