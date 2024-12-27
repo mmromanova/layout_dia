@@ -1,5 +1,7 @@
 .reviews {
+
   @include pagePaddings;
+
   @include pageGrid;
   padding-bottom: 120px;
 
@@ -194,6 +196,7 @@
           margin-bottom: 32px;
         }
       }
+      
       @include hover(transform, scale(1.05));
     }
   }

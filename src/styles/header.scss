@@ -5,6 +5,7 @@
   border-radius: 0 0 30px 30px;
   color: $text-color-white;
   background-color: $black-background-color;
+
   @include pagePaddings;
 
   &__top-bar {
@@ -73,6 +74,7 @@
   }
 
   &__main {
+
     @include pageGrid;
 
     &--top {
@@ -185,6 +187,7 @@
       position: relative;
       height: 390px;
       margin-top: 48px;
+
       @include removePagePaddings;
       grid-column: span 2;
 
@@ -291,5 +294,3 @@
     }
   }
 }
-
-

@@ -6,8 +6,9 @@
   right: 0;
   pointer-events: none;
   opacity: 0;
-  @include pagePaddings;
   background-color: $black-background-color;
+
+  @include pagePaddings;
 
   &__bar {
     display: flex;
@@ -51,6 +52,7 @@
     &--item {
       color: $text-color-white;
       line-height: 48px;
+      
       @include hover(text-decoration, underline);
     }
   }
