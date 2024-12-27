@@ -1,6 +1,103 @@
+@mixin onTablet {
+  @media (min-width: 640px) {
+    @content;
+  }
+}
+
+@mixin onSmallDesktop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin onDesktop {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin onTheDesign {
+  @media (min-width: 1600px) {
+    @content;
+  }
+}
+
+@mixin onLargeScreens {
+  @media (min-width: 2560px) {
+    @content;
+  }
+}
+
+
+
 @mixin hover($_property, $_toValue) {
   transition: #{$_property} 0.3s;
   &:hover {
     #{$_property}: $_toValue;
+  }
+}
+
+
+@mixin pageGrid {
+  --columns: 2;
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: repeat(var(--columns), 1fr);
+
+  @include onTablet {
+    --columns: 6;
+    column-gap: 30px;
+  }
+
+  @include onSmallDesktop {
+    --columns: 12;
+    column-gap: 20px;
+  }
+
+  @include onDesktop {
+    column-gap: 30px;
+  }
+}
+
+
+
+@mixin pagePaddings {
+  padding-inline: 20px;
+
+  @include onTablet {
+    padding-inline: 40px;
+  }
+
+  @include onSmallDesktop {
+    padding-inline: 54px;
+  }
+
+  @include onDesktop {
+    padding-inline: 227px;
+  }
+
+  @include onLargeScreens {
+    padding-inline: 707px;
+  }
+}
+
+
+@mixin removePagePaddings {
+  margin-inline: -20px;
+
+  @include onTablet {
+    margin-inline: -40px;
+  }
+
+  @include onSmallDesktop {
+    margin-inline: -54px;
+  }
+
+  @include onDesktop {
+    margin-inline: -227px;
+  }
+
+  @include onLargeScreens {
+    margin-inline: -707px;
   }
 }

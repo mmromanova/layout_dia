@@ -1,0 +1,27 @@
+.who-we-are {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  @include pagePaddings;
+
+  @include onSmallDesktop {
+    height: 504px;
+  }
+
+  &__title {
+    line-height: 48px;
+  }
+
+  &__description {
+    font-size: 22px;
+    line-height: 33px;
+    color: $grey-text-color;
+
+    @include onTablet {
+      font-style: 24px;
+      line-height: 36px;
+    }
+  }
+}
