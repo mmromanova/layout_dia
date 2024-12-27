@@ -5,9 +5,9 @@
   justify-content: center;
   text-align: center;
 
-  @include pagePaddings;
+  @include page-paddings;
 
-  @include onSmallDesktop {
+  @include on-small-desktop {
     height: 504px;
   }
 
@@ -20,7 +20,7 @@
     line-height: 33px;
     color: $grey-text-color;
 
-    @include onTablet {
+    @include on-tablet {
       font-style: 24px;
       line-height: 36px;
     }

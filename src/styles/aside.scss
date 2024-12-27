@@ -8,7 +8,7 @@
   opacity: 0;
   background-color: $black-background-color;
 
-  @include pagePaddings;
+  @include page-paddings;
 
   &__bar {
     display: flex;
@@ -16,7 +16,7 @@
     height: 68px;
     align-items: center;
 
-    @include onSmallDesktop {
+    @include on-small-desktop {
       height: 120px;
     }
 
@@ -52,7 +52,7 @@
     &--item {
       color: $text-color-white;
       line-height: 48px;
-      
+
       @include hover(text-decoration, underline);
     }
   }
@@ -62,7 +62,7 @@
     pointer-events: all;
   }
 
-  @include onSmallDesktop {
+  @include on-small-desktop {
     display: none;
   }
 }

@@ -22,14 +22,13 @@ body {
 }
 
 .page {
-
-  @include pagePaddings;
+  @include page-paddings;
 }
 
 a {
   text-decoration: none;
   color: $text-color-white;
-  
+
   @include hover(cursor, default);
 }
 
